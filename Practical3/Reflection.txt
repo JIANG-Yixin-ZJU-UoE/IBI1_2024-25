@@ -1,0 +1,3 @@
+During this course, I have learnt version control and how to navigate Unix-like systems.
+It is challenging partly because of the configuration of my computer and the failure of VPN. 
+But finally I overcome everything!
