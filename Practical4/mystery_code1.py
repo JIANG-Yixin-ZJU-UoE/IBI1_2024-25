@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: count how many times the computer can produce two same values
+# Answer: count how many times the computer tries to produce two same values
 
 # Import libraries
 # randint allows drawing a random number,
