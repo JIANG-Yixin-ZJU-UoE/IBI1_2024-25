@@ -1,13 +1,13 @@
-a = 15
-b = 75
-c = a + b
-d = 90
-e = 5
-f = d + e
-if c > e:
-    print(True) # if c > e, print True. The outcome is True, so C > e
+a = 15 # The walk to the bus stop is 15	mins
+b = 75 # The bus journey takes 1 hr and	15  mins
+c = a + b # c is the total length of time of the bus commute
+d = 90 # the drive takes 1hr and 30 mins
+e = 5 # the driver needs 5 mins to walk to the final destination
+f = d + e # f is the total time of time of the car commute
+if c > e: # compare c with e to find out the shortest way of commute 
+    print(True) # if c > e, print True. The outcome is True, so C > e. So the car travel is faster.
 
-X = True
-Y = False
-W = X and Y
+X = True # the value of X is True
+Y = False # the value of Y is False
+W = X and Y # the value of W is X and Y
 print(W) # print the outcome of W. Because X is True and Y is False, W (X and Y) is False.
