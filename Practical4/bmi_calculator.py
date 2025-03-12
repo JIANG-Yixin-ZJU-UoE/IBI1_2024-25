@@ -1,6 +1,6 @@
 height = 1.63  # stating the person's height 
 weight = 55  # stating the person's weight
-BMI = weight/height**2  # using the formmula to calculate the person's BMI
+BMI = weight/height**2  # using the formula to calculate the person's BMI
 print("the person's BMI is:", BMI)  # show the person's BMI
 if BMI > 30:  # compare the person's BMI with 30
     print("the person is obese")  # if the BMI > 30, the person is obese
