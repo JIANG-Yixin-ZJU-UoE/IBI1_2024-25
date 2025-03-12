@@ -1,4 +1,4 @@
-During this course, I have learnt basic version control skills and how to navigate Unix-like systems.
+During this course, I have learnt basic version control and how to navigate Unix-like systems.
 Everything wasn't well at first because of the configuration of my computer and the failure of VPN. They were the indeed challenging things for me. 
-Thanks for the help of the professor, now I overcome them and there are no more questions left!
+Thanks for the help of the professor Rob, now I overcome them and there are no more questions left!
 
