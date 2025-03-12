@@ -15,3 +15,8 @@ X = True # the value of X is True
 Y = False # the value of Y is False
 W = X and Y # the value of W is X and Y
 print(W) # print the outcome of W. Because X is True and Y is False, W (X and Y) is False.
+#    X     |     Y      |      W
+#   True   |    True    |     True
+#   True   |    False   |     False
+#   False  |    True    |     False
+#   False  |    False   |     False 
