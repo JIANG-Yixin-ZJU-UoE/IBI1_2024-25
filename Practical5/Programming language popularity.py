@@ -26,7 +26,7 @@ plt.bar(ind, percentage_of_users, width) # create a bar chart using the "bar" fu
 plt.ylabel("percentage of users") # define the name of the y-axis
 plt.title("percentage of users who use the top 5 programming languages globally") # define the name of the bar chart
 plt.xticks(ind,code_info.keys()) # define the x-axis label
-plt.yticks(np.arange(0, 70, 10)) # define the y-axis scale, ranging from 0 to 70, using 10 as a scale unit
+plt.yticks(np.arange(0, 110, 10)) # define the y-axis scale, ranging from 0 to 70, using 10 as a scale unit
 plt.show() # show the bar chart
 
 
