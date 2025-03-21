@@ -1,4 +1,4 @@
-a = 15 # The walk to the bus stop is 15	mins
+a = 15 # The walk to the bus stop is 15 mins
 b = 75 # The bus journey takes 1 hr and	15 mins
 c = a + b # c is the total length of time of the bus commute
 d = 90 # the drive takes 1hr and 30 mins
