@@ -1,7 +1,7 @@
 # Program: to explore the popularity of different programming languages
 # Procedures:
 # 1.to create a dictionary to store programming language popularity
-# 2.print percentages of users of all programming languages that can be modified (after which make some changes)
+# 2.print percentages of users of one/all programming language(s) that can be modified (after which make some changes)
 # 3.draw a bar graph using numpy and matplotlib.pyplot
 
 code_info = {"Javascript": 62.3, "HTML": 52.9, "Python": 51, "SQL": 51, "TypeScript": 38.5} # create a dictionary to store programming language popularity
