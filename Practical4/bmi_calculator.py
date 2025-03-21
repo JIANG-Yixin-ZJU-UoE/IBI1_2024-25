@@ -1,3 +1,9 @@
+# aim: to tell the bmi category of a person
+# Procedure:
+# 1.get the data of height and weight
+# 2.calculate the value of bmi
+# 3.compare the value with 18.5 and 30 and tell the category os obese, underweight or normal
+
 height = 1.63  # stating the person's height 
 weight = 55  # stating the person's weight
 BMI = weight/height**2  # using the formula to calculate the person's BMI
