@@ -34,7 +34,6 @@ while time <= 1000:
 # draw a figure depicting the graph
 # 1. plot the three curves S,I,R, using different colors
 # 2. set x/y axis parameters
-
 plt.figure(figsize=(6, 4), dpi=150)
 plt.plot(S_list, label='Susceptible', color='blue')
 plt.plot(I_list, label='Infected', color='red')
