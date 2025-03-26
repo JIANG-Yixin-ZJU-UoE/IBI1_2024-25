@@ -15,37 +15,35 @@ beta = 0.3
 gamma = 0.05
 
 
-# 自定义颜色映射
+# define the color
 color_mapping = {
-    0: [0.18, 0.80, 0.44, 1],  # 绿色：易感者
-    1: [0.91, 0.30, 0.24, 1],  # 红色：感染者
-    2: [0.20, 0.60, 0.86, 1]   # 蓝色：康复者
+    0: [0.18, 0.80, 0.44, 1], 
+    1: [0.91, 0.30, 0.24, 1], 
+    2: [0.20, 0.60, 0.86, 1]  
 }
-
-# 将数字矩阵转换为颜色矩阵
 def generate_colors(grid):
     return np.array([[color_mapping[val] for val in row] for row in grid])
 
-# 初始绘图
+# draw the plot
 img = plt.imshow(generate_colors(population))
 plt.axis('off')
 plt.title(f"SIR Spatial Spread - Step 0 (Initial Clusters: {I})")
 
-# 动态更新循环
+# renew the loop
 for step in range(timesteps):
     new_pop = population.copy()
     
-    # 处理感染者康复
+    # recovery
     infected = np.argwhere(population == 1)
     for i, j in infected:
         if np.random.rand() < gamma:
             new_pop[i, j] = 2
     
-    # 传播感染（优化后的邻域检查）
+    # check the neighbers' infection(spread of the disease)
     for i in range(100):
         for j in range(100):
             if population[i, j] == 1:
-                # 检查周围8邻域
+                # check the 8 neighbors
                 for di in [-1, 0, 1]:
                     for dj in [-1, 0, 1]:
                         if 0 <= i+di < 100 and 0 <= j+dj < 100:
@@ -53,14 +51,12 @@ for step in range(timesteps):
                                 if np.random.rand() < beta:
                                     new_pop[i+di, j+dj] = 1
     
-    # 更新数据和可视化
     population = new_pop.copy()
     img.set_data(generate_colors(population))
     plt.title(f"SIR Spatial Spread - Step {step+1}")
     plt.draw()
-    plt.pause(0.2)  # 调整动画速度
+    plt.pause(0.2)
     
-    # 检查窗口是否关闭
     if not plt.get_fignums():
         break
 
