@@ -44,4 +44,5 @@ plt.ylabel('Number of People')
 plt.title('Basic SIR Model Simulation')
 plt.legend()
 plt.show()
+
     
