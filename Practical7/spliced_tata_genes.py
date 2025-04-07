@@ -23,9 +23,10 @@ for i in range(0,3):
                     # count the instances of TATAWAW
                     instance_list = re.findall(r'TATA[AT]A[AT]', str) # find all the TATA boxes
                     TATA_count = len(instance_list) # count the number of TATA instances
-                    out_file = open(f'{list[i]}_spliced_genes.fa', 'a') # open the according file
-                    out_file.write('>' + gene_name + f'   sequence TATAWAW appears {TATA_count} times' '\n') # write the gene name and the TATA count
-                    out_file.write(str + '\n') # write the sequence
+                    if TATA_count >= 1:
+                        out_file = open(f'{list[i]}_spliced_genes.fa', 'a') # open the according file
+                        out_file.write('>' + gene_name + f'   sequence TATAWAW appears {TATA_count} times' '\n') # write the gene name and the TATA count
+                        out_file.write(str + '\n') # write the sequence
                     gene_name = re.findall(r'gene:(\S+)\s', line)[0] # define the gene name as the next gene
                     str = '' # reinitialize the str
                 else:
