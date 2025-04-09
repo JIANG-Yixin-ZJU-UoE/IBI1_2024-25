@@ -23,7 +23,7 @@ def site(cut_seq, recog_seq):
 
     list = []
     if re.findall(rf"{recog_seq}", cut_seq):
-        for i in range(len(cut_seq)-3):
+        for i in range(len(cut_seq)-len(recog_seq)+1):
             test_str = cut_seq[i:i+len(recog_seq)]
             if test_str == recog_seq:
                 list.append(i+1)       
