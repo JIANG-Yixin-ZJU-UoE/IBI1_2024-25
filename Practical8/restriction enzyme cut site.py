@@ -5,9 +5,9 @@
 # 3. if it is a valid sequence, then find in the cut sequence the existence of recognized sequence
 # 4. if so, return the position and the nuleotide
 
+# import the re and initialize the sequence
 import re
-cut_seq = "ACGTCGTGACTCGTATCGATC"
-recog_seq = "TCGT"
+
 def site(cut_seq, recog_seq):
 
     """ find out if all the inputs are "A", "G", "C", "T" """
@@ -19,15 +19,17 @@ def site(cut_seq, recog_seq):
         print("the recognized sequence is not valid")
         exit()
 
+    """ tell if the cut_seq contains the recog_seq sequence and return the position """
+
     list = []
     if re.findall(rf"{recog_seq}", cut_seq):
-        index = 1
         for i in range(len(cut_seq)-3):
             test_str = cut_seq[i:i+len(recog_seq)]
             if test_str == recog_seq:
-                list.append(index)       
-            else:
-                index += 1
+                list.append(i+1)       
         return list
 
+# this is an example of using the function
 print(site(cut_seq = "ACGTCGTGACTCGTATCGATC", recog_seq = "TCGT"))
+
+
