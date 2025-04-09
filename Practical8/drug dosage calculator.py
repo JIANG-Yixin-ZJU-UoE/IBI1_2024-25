@@ -7,9 +7,12 @@
 # 5. if the weight or the strength do not meet the requirements, print out the error
 # 6. use the function
 
-weight = float(input('please enter your weight: '))
-strength = float(input('please choose one strength from 120mg/5ml and 250mg/5ml: '))
 def dosage(weight, strength):
+
+    """ tell if the weight is in range and the strength is 120 or 250
+        calculate the volume needed
+        if the weight or the strength do not meet the requirements, print out the error """
+    
     if weight >= 10 and weight <= 100:
         if strength == 120 or strength == 250:
             recommend = 15
@@ -23,4 +26,5 @@ def dosage(weight, strength):
         ValueError2 = "error: the weight out of range"
         return ValueError2
     
-print(dosage(weight, strength))
+# this is where an example is given to call the function
+print(dosage(weight = 20, strength = 120))  
