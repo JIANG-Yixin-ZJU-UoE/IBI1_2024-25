@@ -1,0 +1,13 @@
+Question: plot a boxplot of DALYs of all countries in 1990
+Line number: from 49 to 65
+Result Discussion:
+    The result is what I have expected: the box is in the center, with lines showing its mean values, quartiles and outliers.
+    As for why the data looks like this, I used many parameters to achieve this:
+        1. "vert = True" means the box will be vertical rather than lie flatly
+        2. "whis = 1.5" defines the appropriate width of the box
+        3. "patch_artist = True" will fill the box with color, preventing an empty box
+        4. "meanline = True" will show the mean line in the box
+        5. "showbox = True" and "showcaps = True" help show the outline/rough sketch of the box
+        6. "showfliers = True" will show the outliers
+        7. "notch = False" prevents importing gaps in the graph
+    By setting these parameters, I can have a picture of what the graph looks like.
