@@ -13,7 +13,9 @@ uk_countries_population = {"England": 57.11, "Wales": 3.13, "Norhtern Ireland": 
 china_countries_population = {"Zhejiang": 65.77, "Fujian": 41.88, "Jiangxi": 45.28, "Anhui": 61.27, "Jiangsu": 85.15} # store population information in Zhejiang-neighboring provinces as dictionary
 
 import matplotlib.pyplot as plt # import matplotlib.pyplot and name it plt
-plt.figure() # show two pictures at the same time
+plt.figure(figsize = (12,5)) # show two pictures at the same time
+
+plt.subplot(1,2,1) # create a subplot with 1 row and 2 columns, and draw this plot in the first column
 labels = uk_countries_population.keys() # store the countries in the UK
 sizes = uk_countries_population.values() # store the populations in countries in the UK
 explode = (0.2,0,0,0) # specifies the fraction of the radius with which to offset each wedge (the population in England offsets 0.2 times of the radius)
@@ -21,8 +23,7 @@ plt.pie(sizes, explode = explode, labels = labels, autopct = "%.1f%%", shadow = 
 plt.title("population in countries in uk") # create a title called "population in countries in the UK"
 plt.axis("equal") # ensure the pie chart is a perfect circle
 
-
-plt.figure() # show two pictures at the same time
+plt.subplot(1,2,2) # create a subplot with 1 row and 2 columns, and draw this plot in the second column
 labels = china_countries_population.keys() # store Zhejiang-neighboring provinces
 sizes = china_countries_population.values() # store the populations in countries in Zhejiang-neighboring provinces
 explode = (0,0,0,0,0) # # specifies the fraction of the radius with which to offset each wedge (no place is offset in this graph)
@@ -30,4 +31,4 @@ plt.pie(sizes, explode = explode, labels = labels, autopct = "%.1f%%", shadow = 
 plt.title("population in Zhejiang-neighboring provinces in China") # create a title called "population in Zhejiang-neighboring provinces in China"
 plt.axis("equal") # ensure the pie chart is a perfect circle
 
-plt.show() # show the two pie charts together
+plt.show() # show the pie chart
