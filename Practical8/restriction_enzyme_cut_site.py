@@ -3,7 +3,7 @@
 # 1. set the initial sequence
 # 2. test whether all the inputs are within "A", "G", "C", "T"
 # 3. if it is a valid sequence, then find in the cut sequence the existence of recognized sequence
-# 4. if so, return the position and the nuleotide
+# 4. if so, return the position and the nucleotide
 
 # import the re and initialize the sequence
 import re
