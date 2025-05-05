@@ -10,7 +10,11 @@ print(code_info) # print the dictionary
 for i in code_info.values(): # iterating all values in the dictionary
     print(i) # print them out
 
-print(code_info["HTML"]) # print a percentage of users of one particular programming language that can be modified
+for i, j in zip(code_info.keys(), code_info.values()): # iterating all keys and values in the dictionary
+    print(i, j) # print them out
+
+input_variable = input("Please enter a programming language: ") # ask the user to input a programming language
+print(input_variable) # print a percentage of users of one particular programming language that can be modified
 
 code_info1 = code_info.copy() # create a new dictionary called code_info1 that is the same as code_info
 code_info1["Python"] = 80 # alter the value of the key "Python"
