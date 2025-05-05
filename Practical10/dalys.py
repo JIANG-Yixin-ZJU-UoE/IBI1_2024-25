@@ -5,7 +5,7 @@
 # 3. show all the DALYs in 1990
 # 4. compare the mean DALYs of the UK and the France
 # 5. use a graph to show how DALYs changes over the years in the UK
-# 6. draw a a boxplot of DALYs across countries in 1990
+# 6. draw a boxplot of DALYs across countries in 1990
 
 import os
 import pandas as pd
@@ -46,7 +46,7 @@ plt.xlabel("Years")
 plt.ylabel("DALYs in the UK")
 plt.show()
 
-# draw a a boxplot of DALYs across countries in 1990 (answer the question stated in file question.txt)
+# draw a boxplot of DALYs across countries in 1990 (answer the question stated in file question.txt)
 DALYs_1990 = dalys_data.loc[dalys_data["Year"] == 1990, "DALYs"]
 data_list = DALYs_1990.tolist()
 n = 228
