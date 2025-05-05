@@ -36,7 +36,7 @@ def step(population):
                                     copy[i+di, j+dj] = 1 # the neighbor has beta percent of being infected
 
                 infected.append([i, j]) # add infected coordinates
-    # iterate the infected to make possible reocvery
+    # iterate the infected to make possible recovery
     for i, j in infected:
         if np.random.random() < gamma:
             copy[i, j] = 2 # the infected have gamma percent of recovery
@@ -50,7 +50,7 @@ ax3 = fig.add_subplot(223) # draw a subplot in the third place of a whole plot
 ax4 = fig.add_subplot(224) # draw a subplot in the forth place of a whole plot
 
 
-ax.imshow(population, cmap= 'viridis', interpolation= 'nearest') # draw the initial plot with one randomly choosed point
+ax.imshow(population, cmap= 'viridis', interpolation= 'nearest') # draw the initial plot with one randomly chosen point
 for i in range(10): 
     population = step(population) # use the step function 10 times  
 ax2.imshow(population, cmap= 'viridis', interpolation= 'nearest') # draw the plot
