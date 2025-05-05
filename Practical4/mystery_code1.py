@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: count how many times the computer tries to produce two same values
+# Answer: this piece of code generates 2 numbers from 1 to 6. If the numbers aren't equal, proceed the loop. If the numbers are equal, stop the loop and count how many times the computer tries to produce two same values.
 
 # Import libraries
 # randint allows drawing a random number,
