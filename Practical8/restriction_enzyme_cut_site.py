@@ -21,13 +21,13 @@ def site(cut_seq, recog_seq):
 
     """ tell if the cut_seq contains the recog_seq sequence and return the position """
 
-    list = []
+    list1 = []
     if re.findall(rf"{recog_seq}", cut_seq):
         for i in range(len(cut_seq)-len(recog_seq)+1):
             test_str = cut_seq[i:i+len(recog_seq)]
             if test_str == recog_seq:
-                list.append(i+1)       
-        return list
+                list1.append(i+1)       
+        return list1
 
 # this is an example of using the function
 print(site(cut_seq = "ACGTCGTGACTCGTATCGATC", recog_seq = "TCGT"))
