@@ -1,8 +1,16 @@
 Question: plot a boxplot of DALYs of all countries in 1990
 Line number: from 49 to 65
 Result Discussion:
-    The result is what I have expected: the box is in the center, with lines showing its mean values, quartiles and outliers.
-    As for why the data looks like this, I used many parameters to achieve this:
+1. My motivation of doing this task:
+   It is important to know the distribution of the DALYs of all the countries if we want to get an overview and conduct horizontal comparison.
+Through this process, we can know the mean, the outliers and the range of the DALYs.
+2. My plan/thinking process:
+   Firstly, I need to extract all the data of 1990.
+   Then, I need to decide my title, x/y axis of the graph.
+   Next, I can use the boxplot command to draw the graph.
+3. The result explanation:
+   The result is what I have expected: the box is in the center, with lines showing its mean values, quartiles and outliers.
+   As for why the data looks like this, I used many parameters to achieve this:
         1. "vert = True" means the box will be vertical rather than lie flatly
         2. "whis = 1.5" defines the appropriate width of the box
         3. "patch_artist = True" will fill the box with color, preventing an empty box
