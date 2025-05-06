@@ -13,18 +13,18 @@ def dosage(weight, strength):
         calculate the volume needed
         if the weight or the strength do not meet the requirements, print out the error """
     
-    if weight >= 10 and weight <= 100:
+    if 10 <= weight <= 100:
         if strength == 120 or strength == 250:
             recommend = 15
             total = recommend * weight
             volume = total / strength * 5
             return volume
         else:
-            ValueError1 = "error: strength does not match"
-            return ValueError1
+            print("error: strength does not match")
+            return
     else:
-        ValueError2 = "error: the weight out of range"
-        return ValueError2
+        print("error: the weight out of range")
+        return
     
 # this is where an example is given to call the function
 print(dosage(weight = 20, strength = 120))  
