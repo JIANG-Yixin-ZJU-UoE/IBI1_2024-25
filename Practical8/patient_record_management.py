@@ -5,16 +5,17 @@
 # 4. make an example to use the class
 
 
-class patients:
-    def __init__(self, name, age, date_of_latest_admission, mediacal_history): # initialize data attributes
+class Patients:
+    def __init__(self, name, age, date_of_latest_admission, medical_history): # initialize data attributes
         self.name = name
         self.age = age
         self.date_of_latest_admission = date_of_latest_admission
-        self.mediacal_history = mediacal_history
+        self.medical_history = medical_history
     
-    def record(self, name, age, date_of_latest_admission, mediacal_history): # print out the patient's information
-        patients_record = f"{name}, {age}, {date_of_latest_admission}, {mediacal_history}"
+    def record(self): # print out the patient's information
+        patients_record = f"{self.name}, {self.age}, {self.date_of_latest_admission}, {self.medical_history}"
         return patients_record
     
 # this is an example of using the class and the function to print out patients' information
-print(patients.record("kate", "32", "2024.11.23", "none"))
+patient = Patients(name = "Kate", age = "32", date_of_latest_admission = "2024.11.23", medical_history = "none")
+print(patient.record())
