@@ -6,11 +6,11 @@
 # 4. if the sequence contains TATA, create a file and store the gene name and the sequence into the file, reinitialize the list and the string
 # 5. if not, just reinitialize the list and the string
 
-input = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r') # read the original file
+input_file = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r') # read the original file
 store_str = "" # initialize a string and a list
 gene_name = []
 import re # import the re to use later
-for line in input: # iterate the line in the file
+for line in input_file: # iterate the line in the file
     line = line.strip() # link all lines together
     if re.search(r'gene:(\S+)\s', line): # judge if the line contains the gene name
         if re.search(r'TATA[AT]A[AT]', store_str): # judge if the last gene sequence contains TATA
