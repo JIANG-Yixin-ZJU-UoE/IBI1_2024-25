@@ -13,7 +13,6 @@ S = 9999
 I = 1
 R = 0
 SIR_array = np.array([S, I, R])
-N = 10000
 N = S + I + R
 beta = 0.3
 gamma = 0.05
