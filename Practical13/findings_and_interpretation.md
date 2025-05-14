@@ -1,5 +1,5 @@
 1. The length and subcellular localisation of the human SOD2 protein:
-   The length is 222 amino acids. The protein is in the mitochondria.
+   The length is 222 amino acids. The protein is in the mitochondrion matrix.
 2. The range of percentage identities in the reported online BLAST results:
    Human SOD: 58.1%--100%
    Mouse SOD: 57.3%--100%
