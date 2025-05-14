@@ -10,10 +10,17 @@
 from Bio.Align import substitution_matrices
 blosum62 = substitution_matrices.load("BLOSUM62")
 
-seq_human = open('seq_human.fa', 'r')
-seq_mouse = open('seq_mouse.fa', 'r')
-seq_random = open('seq_random.fa', 'r')
+# create a function to read the fasta file and turn the sequence into str form
+from Bio import SeqIO
+def read_fasta(file_path):
+    sequences = []
+    for record in SeqIO.parse(file_path, "fasta"):
+        sequences.append(str(record.seq))
+    return sequences[0]
 
+seq_human = read_fasta('C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical13/seq_human.fasta')
+seq_mouse = read_fasta('C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical13/seq_mouse.fasta')
+seq_random = read_fasta('C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical13/seq_random.fasta')
 
 # compare the alignment of human and mouse genes
 human_mouse_score = 0
