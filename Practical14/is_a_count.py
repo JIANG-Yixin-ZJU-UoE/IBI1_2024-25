@@ -10,7 +10,7 @@ import xml.sax                    # import SAX module
 from datetime import datetime     # use datetime module to count time
 
 # DOM parser
-def parse_with_dom(xml_path):
+def parse_with_dom(xml_file):
     start_time = datetime.now()   # start the timer
     # store the result using a dictionary
     results = {
@@ -18,7 +18,7 @@ def parse_with_dom(xml_path):
         "biological_process": {"term_id": "", "term_name": "", "count": 0},
         "cellular_component": {"term_id": "", "term_name": "", "count": 0}}
     
-    dom_tree = xml.dom.minidom.parse(xml_path)       # parse the XML file
+    dom_tree = xml.dom.minidom.parse(xml_file)       # parse the XML file
     terms = dom_tree.getElementsByTagName("term")    # get all the term nodes
     
     # get namespaces
@@ -92,20 +92,20 @@ class GOHandler(xml.sax.ContentHandler):
         if self.current_tag in ["id", "name", "namespace"]:
             self.content_buffer += content
 
-def parse_with_sax(xml_path):
+def parse_with_sax(xml_file):
     start_time = datetime.now()  # start the timer
     handler = GOHandler()
-    xml.sax.parse(xml_path, handler)
+    xml.sax.parse(xml_file, handler)
     end_time = datetime.now()    # end the timer
     return handler.results, (end_time - start_time).total_seconds() # count the time used
 
 # compare DOM and SAX
 if __name__ == '__main__': 
-    xml_file = 'go_obo.xml' 
+    xml_is_a = 'C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical14/go_obo.xml'
     
     # parse the XML file using DOM and SAX
-    dom_results, dom_time = parse_with_dom(xml_file) 
-    sax_results, sax_time = parse_with_sax(xml_file)
+    dom_results, dom_time = parse_with_dom(xml_is_a) 
+    sax_results, sax_time = parse_with_sax(xml_is_a)
     
     print("terms with the most <is_a> in each ontology:")
     
