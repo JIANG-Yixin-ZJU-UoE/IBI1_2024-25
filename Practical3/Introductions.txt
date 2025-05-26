@@ -1,5 +1,5 @@
 Hello, my name is Jiang Yixin.
-I am an undergraduate student in ZJU-UoE Institute.
+I am an undergraduate student in ZJU-UoE Institute. My major is bioinformatics.
 I like drinking milktea and eating chocolate biscuits. 
 My hobbies are Chinese calligraphy and music.
 I am happy that I can push my repo from Visual Studio Code to GitHub.
