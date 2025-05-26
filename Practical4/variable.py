@@ -10,7 +10,7 @@ elif c < f: # compare c with e to find out the shortest way of commute
     print(f"the bus travel takes {c} mins,", "the bus travel is faster") # if c < f, the bus travel is faster.
 else: # compare c with e to find out the shortest way of commute
     print("the two methods are the same") # if c = f, the two methods are the same.
-# The bus ride is quicker and needs shorter time.
+# The bus ride is quicker and needs shorter time, meaning that f is greater than c.
 
 X = True # the value of X is True
 Y = False # the value of Y is False
