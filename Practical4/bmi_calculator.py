@@ -1,3 +1,8 @@
+# Goal: to calculate the BMI values for the input height and weight
+# Procedure:
+# 1. display the formula and calculate the BMI
+# 2. judge which category the input is in
+
 height = 1.63  # stating the person's height 
 weight = 55  # stating the person's weight
 BMI = weight/height**2  # using the formula to calculate the person's BMI
