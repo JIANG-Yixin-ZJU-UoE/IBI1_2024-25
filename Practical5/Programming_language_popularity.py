@@ -7,18 +7,11 @@
 code_info = {"Javascript": 62.3, "HTML": 52.9, "Python": 51, "SQL": 51, "TypeScript": 38.5} # create a dictionary to store programming language popularity
 print(code_info) # print the dictionary
 
-for i in code_info.values(): # iterating all values in the dictionary
-    print(i) # print them out
-
-for i, j in zip(code_info.keys(), code_info.values()): # iterating all keys and values in the dictionary
-    print(i, j) # print them out
-
-input_variable = input("Please enter a programming language: ") # ask the user to input a programming language
-print(input_variable) # print a percentage of users of one particular programming language that can be modified
-
-code_info1 = code_info.copy() # create a new dictionary called code_info1 that is the same as code_info
-code_info1["Python"] = 80 # alter the value of the key "Python"
-print(code_info1) # print the new dictionary
+input_variable = "Python" # use a variable to store the name of a programming language (e.g. Python)
+if input_variable in code_info: # check if the input_variable is in the dictionary code_info
+    print(f"The percentage of users of {input_variable} is {code_info[input_variable]}%") # print the percentage of users using the programming language
+else:
+    print(f"{input_variable} is not in the dictionary")
 
 import numpy as np # import numpy and name it np
 import matplotlib.pyplot as plt # import matplotlib.pyplot and name it plt
