@@ -1,3 +1,5 @@
 Hello, my name is Jiang Yixin.
-I like drinking tea and eating chocolate biscuits. 
-I am happy that I can push my repo from Visual Studio Code to GitHub
+I am an undergraduate student in ZJU-UoE Institute.
+I like drinking milktea and eating chocolate biscuits. 
+My hobbies are Chinese calligraphy and music.
+I am happy that I can push my repo from Visual Studio Code to GitHub.
