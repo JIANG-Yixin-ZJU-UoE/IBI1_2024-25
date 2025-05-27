@@ -1,3 +1,5 @@
-From this week's practical, I think it was difficult for me to do. 
-I think the most exciting part is to look at the picture produced successfully, esp the third part.
-I learned to reinforce the plotting skills learned last week and got to know how to update the data.
+From this week's practical, I think it was difficult for me to do.:
+    It was hard for me to draw four pictures together and update the data in each picture.
+    Also, I spent a long time thinking how to infect the neighbors of one infected person.
+I think the most exciting part is to look at the picture produced successfully, esp the third part. It was amazing to see how the disease spreads and decline.
+I learned to reinforce the plotting skills learned last week and got to know how to update the data from previous graphs.
