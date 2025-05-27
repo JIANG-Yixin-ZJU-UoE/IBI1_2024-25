@@ -18,9 +18,9 @@ def read_fasta(file_path):
         sequences.append(str(record.seq))
     return sequences[0]
 
-seq_human = read_fasta('C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical13/seq_human.fasta')
-seq_mouse = read_fasta('C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical13/seq_mouse.fasta')
-seq_random = read_fasta('C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical13/seq_random.fasta')
+seq_human = read_fasta('seq_human.fasta')
+seq_mouse = read_fasta('seq_mouse.fasta')
+seq_random = read_fasta('seq_random.fasta')
 
 # compare the alignment of human and mouse genes
 human_mouse_score = 0
