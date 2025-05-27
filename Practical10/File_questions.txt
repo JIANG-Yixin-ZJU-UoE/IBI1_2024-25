@@ -1,5 +1,5 @@
-Question: plot a boxplot of DALYs of all countries in 1990
-Line number: from 49 to 65
+Question: plot a boxplot of DALYs distribution of all countries in 1990
+Line number: from 48 to 64
 Result Discussion:
 1. My motivation of doing this task:
    It is important to know the distribution of the DALYs of all the countries if we want to get an overview and conduct horizontal comparison.
