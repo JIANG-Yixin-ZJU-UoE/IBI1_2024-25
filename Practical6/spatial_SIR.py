@@ -64,8 +64,8 @@ ax4.imshow(population, cmap= 'viridis', interpolation= 'nearest') # draw the plo
 for ax in [ax, ax2, ax3, ax4]:
     ax.set_xticks(range(0, 100, 20), ("0", "20", "40", "60", "80")) # set the x ticks from 0 to 80
     ax.set_yticks(range(80 ,-20, -20), ('80', '60', '40', '20', '0')) # set the y ticks from 80 to 0
-    ax.plot(population = 0, color = "purple") # make the susceptible points purple
-    ax.plot(population = 1, color = "green") # make the infected points green
-    ax.plot(population = 2, color = "yellow") # make the recovered points yellow
+    ax.plot(population = 0, color = "purple")
+    ax.plot(population = 1, color = "green")
+    ax.plot(population = 2, color = "yellow")
 
 plt.show() # show the plot
