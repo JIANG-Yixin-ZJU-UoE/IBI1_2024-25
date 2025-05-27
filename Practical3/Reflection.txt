@@ -1,5 +1,5 @@
 During this course, I have learnt basic version control and how to navigate Unix-like systems.
 Everything wasn't well at first because of the configuration of my computer and the failure of VPN. They were the indeed challenging things for me. 
-At first I was also unable to use commands like "git add" or "git commit" very skillfully and I had many questions. 
+At first I was also unable to use commands like "git add" or "git commit" very skillfully and I had many questions about which one should I use first. 
 Thanks for the help of the professor Young, now I overcome them and there are no more questions left!
 
