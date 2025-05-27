@@ -14,6 +14,7 @@ I = 1
 R = 0
 SIR_array = np.array([S, I, R])
 N = S + I + R
+N = 10000
 beta = 0.3
 gamma = 0.05
 S_list = [S]
