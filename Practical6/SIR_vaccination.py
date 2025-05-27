@@ -43,7 +43,7 @@ for i in range(0,110,10):
 plt.xlabel('Time') # set the x label
 plt.xticks(range(0,1200,200), ('0', '200', '400', '600', '800', '1000')) # set the x ticks from 0 to 1000
 plt.ylabel('Number of People') # set the y label
-plt.title('Basic SIR Model Simulation with different vaccination rate') # set the title of the graph
+plt.title('Basic SIR Model Simulation with different vaccination rates') # set the title of the graph
 plt.legend(loc='upper right') # set the legend
 plt.show() # show the graph
 
