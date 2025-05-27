@@ -7,11 +7,9 @@
 # 5. use a graph to show how DALYs changes over the years in the UK
 # 6. draw a boxplot of DALYs across countries in 1990
 
-import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-os.chdir("C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical10")
 
 dalys_data = pd.read_csv("dalys-rate-from-all-causes.csv") # import the .csv file 
 
