@@ -101,7 +101,7 @@ def parse_with_sax(xml_file):
 
 # compare DOM and SAX
 if __name__ == "__main__": 
-    xml_is_a = "C:/Users/22365/Desktop/Hainingmaterials/IBI/IBI1_PARCTICAL/IBI1_2024-25/Practical14/go_obo.xml"
+    xml_is_a = "go_obo.xml"
     
     # parse the XML file using DOM and SAX
     dom_results, dom_time = parse_with_dom(xml_is_a) 
