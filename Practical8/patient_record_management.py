@@ -13,7 +13,7 @@ class Patients:
         self.medical_history = medical_history
     
     def record(self): # print out the patient's information
-        patients_record = f"{self.name}, {self.age}, {self.date_of_latest_admission}, {self.medical_history}"
+        patients_record = f"Name: {self.name}, Age: {self.age}, Date of latest admission: {self.date_of_latest_admission}, Medical history: {self.medical_history}"
         return patients_record
     
 # this is an example of using the class and the function to print out patients' information
